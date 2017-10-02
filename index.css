@@ -7,7 +7,6 @@ body{
 
 }
 
-
 h2 {
     font-family: 'Indie Flower', cursive;
     margin:10px 8px;
@@ -138,7 +137,6 @@ textarea:focus, input:focus {
     cursor: pointer;
     border-radius: 8px;
 }
-
 
 @media (min-width: 500px) {
     img, div, aside{
