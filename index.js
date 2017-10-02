@@ -9,7 +9,6 @@ $(function(){
 		"img/river.jpg",
 		"img/snail.jpg",
 		"img/umbrellas.jpg"
-
 	];
 
 	let i = 0;
@@ -24,3 +23,5 @@ $(function(){
 	}, 2000);
 
 });
+
+

@@ -2,10 +2,11 @@ body{
     font-family: 'Gloria Hallelujah';
 	background-image: url("img/content-back.jpeg");
     background-size:     auto;                      
-    background-repeat:   no-repeat;
     background-position: center center;
+    max-width: 1980px;
 
 }
+
 
 h2 {
     font-family: 'Indie Flower', cursive;
@@ -15,12 +16,14 @@ h2 {
 p {
     margin-top: 5px;
 }
+
 header{
 	background-image: url("img/head-leaves.jpeg");
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;
-    height: 100px; 
+    width: 100%; 
+    height:100px;
 }
 
 footer{
@@ -28,14 +31,13 @@ footer{
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;
-    height: 100px; 
+    width: 100%; 
     color: #eee;
-    padding-left: 25%; 
+    padding-left: 25%;
+    height:100px; 
 }
 
-#my-contacts{
-	margin-right:200px;
-}
+
 
 nav ul {
     list-style-type: none;
@@ -62,42 +64,35 @@ nav li a:hover {
 }
 
 .info-panel{
-	border-radius:10px;
-	width: 70%;
+	width: 100%;
 	background-color:rgba(200, 200, 200, 0.5);
 	border: solid 1px #999;
-	margin: 30px 20px;
-	padding: 5px;
+	margin: 30px 0px;
+    padding: 10px;
 }
 
 .info-panel img {
-	float: right;
-	margin: 5px;
-    width: 150px;
-    height: auto;
+	width: 100%;
     padding: auto;
-    border-radius:10px;
 }
 
 .textual{
-	width: 75%;
-    height: auto;
 	float: left;
-	margin: 15px;
-    padding: auto;
 }
 
-
-#hobby img{
-    height: 90px;
-    margin: 5px 10px;
+article{
+    margin-top: 20px;
 }
 
+article .img{
+    width: 100%;
+    margin: 5px auto;
+}
 
 #gallery{
     overflow: hidden;
     margin: auto;
-    width: 40%;
+    width: 100%;
 }
 
 #gallery img{
@@ -106,25 +101,16 @@ nav li a:hover {
     display: block;
     height: 200px;
     width: auto;
-    border-radius:10px;
 }
 
-.leftside{
-	float:left;
-}
-
-.rightside{
-	float:right;
-}
 
 #userinfo{
 	clear: both;
-	width:35%;
-	border-radius:10px;
 	background-color:rgba(150, 200, 50, 0.5);
 	border: solid 1px #999;
-	margin: auto;
-	padding: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
 }
 
 input, textarea{
@@ -153,10 +139,39 @@ textarea:focus, input:focus {
     border-radius: 8px;
 }
 
-hr{
-	width:100%;
-	border-top:3px solid;/* or bottom */
-  	margin:1em auto;
-}
 
+@media (min-width: 500px) {
+    img, div, aside{
+        border-radius: 10px;
+    }
+    article .img {
+        width: 40%;
+        margin-right: 10px; 
+    }
+    .info-panel img {
+        float: right;
+        width: 30%;
+    }
+    .info-panel{
+        width: 80%;
+    }
+
+    .textual{
+        width: 66%;
+    }
+    .leftside{
+        float:left;
+    }
+
+    .rightside{
+        float:right;
+    }
+
+    #gallery{
+        width: 30%;
+    }
+    #userinfo{
+        width: 30%;
+    }
+}
 

@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Gloria+Hallelujah" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-	<title>Welcome page</title>
+    title>Welcome page</title>
 </head>
 <body>
 	
@@ -35,7 +34,7 @@
 		    	<img src="img/autumn-me.jpg" alt="Autumn">
 		    </div>
 		</aside>
-	</main>
+
 
 		<aside id="education" class="info-panel rightside">
 			<h2>Education</h2>
@@ -50,59 +49,59 @@
 		    	<img src="img/kpi.jpg" alt="KPI">
 		    </div>
 		</aside>
+	</main>
 
-		<div id="hobby" class="info-panel leftside">
-			<h2>My hobby</h2>
-			<div>
-				<table>
-					<tr>
-						<td><img src="img/tennis.jpg" alt="Tennis"></td>
-						<td>iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-					</tr>
-					<tr>
-						<td><img src="img/son&me.jpg" alt="Son&me"></td>
-						<td>iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-					</tr>
-					<tr>
-						<td><img src="img/program.jpg" alt="Programming"></td>
-						<td>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-					</tr>
-				</table>				
-
+	<div id="hobby" class="info-panel leftside">
+		<h2>My hobby</h2>
+		<article>
+			<div class = "img">	
+				<img src="img/tennis.jpg" alt="Tennis">
 			</div>
-		</div>
+			<div class = "text">
+			iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</article>
+		<article>
+			<div class = "img">	
+				<img src="img/son&me.jpg" alt="Son&me">
+			</div>
+			<div class = "text">
+			iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</article>
+		<article>
+			<div class = "img">	
+				<img src="img/program.jpg" alt="Programming">
+			</div>
+			<div class = "text">
+			iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</article>
+				
+	</div>
 
-		<div id="gallery" class="info-panel">
-			<h2>Gallery</h2>
-			<div class="gallery">
-				<img src="img/solia&me.jpg">
-		    </div>
-		</div>
+	<div id="gallery" class="info-panel">
+		<h2>Gallery</h2>
+		<div class="gallery">
+			<img src="img/solia&me.jpg">
+	    </div>
+	</div>
+				
+	<div id="userinfo">
+			<h2>Your contact info</h2>
+			<form>
+				<label for="name">Name</label>
+				<input id="name" placeholder="your name..." name="name">
+				<label for="email">Email</label>
+				<input id="email" type="email" placeholder="your email...">
+				<label for="message">Message</label>
+				<textarea id="message" placeholder="your message..."></textarea>
+				<input class="sbm-button" type="submit" value="Send"/>
+			</form>
 
-		<hr>
 			
-		<div id="userinfo">
-				<h2>Your contact info</h2>
-				<form>
-					<label for="name">Name</label>
-					<input id="name" placeholder="your name..." name="name">
-					<label for="email">Email</label>
-					<input id="email" type="email" placeholder="your email...">
-					<label for="message">Message</label>
-					<textarea id="message" placeholder="your message..."></textarea>
-					<input class="sbm-button" type="submit" value="Send"/>
-				</form>
-		</div>
-		<hr>
+
+
 	</div>
 
 	<footer>
