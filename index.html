@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Gloria+Hallelujah" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      		crossorigin="anonymous"></script>
+    <script src="form.js"></script>
    
     <title>Welcome page</title>
 </head>
@@ -37,7 +41,6 @@
 		    </div>
 		</aside>
 
-
 		<aside id="education" class="info-panel rightside">
 			<h2>Education</h2>
 			<div class="textual">
@@ -60,7 +63,12 @@
 				<img src="img/tennis.jpg" alt="Tennis">
 			</div>
 			<div class = "text">
-			iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Tennis is associated with most people with Hollywood stars, millionaires and famous politicians.
+ 			Yes, this is an elite sport, but today they are available for employment and a mere mortal. Besides
+			tennis - this is a great hobby for girls, because it gives not only good mood, but also 
+			serious power and cardiovascular. Which means we play in big tennis and become slimmer, more
+ 			endearing, more beautiful, and also we cultivate patience and purposefulness.
+			It is not for nothing that great tennis is considered the sport of the most successful people!
 			</div>
 		</article>
 		<article>
@@ -68,7 +76,9 @@
 				<img src="img/son&me.jpg" alt="Son&me">
 			</div>
 			<div class = "text">
-			iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Firstly, tennis is not only powerful and fast hands and feet - first of all this is a game in which it is necessary
+			think no less than in chess. Secondly, the support of a wonderful physical form. He gives a load to all groups of muscles. Third, it's a very good emotional shake!
+ 			I still do not succeed. But I'm training hard.
 			</div>
 		</article>
 		<article>
@@ -76,7 +86,8 @@
 				<img src="img/program.jpg" alt="Programming">
 			</div>
 			<div class = "text">
-			iam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non roident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Programming is a typical seizure of the modern world. Spheres and diverse areas in programming a lot, so definitely
+			you can find something really interesting for yourself. And thus it does not require any money investments. But most importantly, no you need even an extra place other than a desk with a computer or laptops on your lap (and I'm sure it's yours).
 			</div>
 		</article>
 				
@@ -90,26 +101,26 @@
 	</div>
 				
 	<div id="userinfo">
-			<h2>Your contact info</h2>
-			<form>
-				<label for="name">Name</label>
-				<input id="name" placeholder="your name..." name="name">
-				<label for="email">Email</label>
-				<input id="email" type="email" placeholder="your email...">
-				<label for="message">Message</label>
-				<textarea id="message" placeholder="your message..."></textarea>
+		<h2>Your contact info</h2>
+			<form method="get" action="index.html">
+				<input id="name" type="text" placeholder="Your name..." name="name" required><br>
+				<input id="email" type="email" placeholder="Your email..." name="email" required>
+				<textarea id="message" placeholder="Your message..." name="message"></textarea>
 				<input class="sbm-button" type="submit" value="Send"/>
 			</form>
-
-			
-
-
+			<div id="message-box"></div>
 	</div>
 
 	<footer>
-		my phone: 093-578-98-96 <br>
-		address:  Lviv <br>
-		email: <a href="savka.mari@gmail.com">savka.mari@gmail.com</a>
+		
+		
+		<div id="my-contacts" class="contacts">
+			my phone: 093-578-98-96 <br>
+			address:  Lviv <br>
+			<a href="mailto:savka.mari@gmail.com"><img src="img/gmail.jpg" alt ="Gmail"></a>
+			<a href="https://www.facebook.com/marina.savka.37"><img src="img/facebook.jpg" alt ="Facebook"></a>
+			<a href="https://www.linkedin.com/marina.savka"><img src="img/linkedin.jpg" alt ="Linkedin"></a>
+		</div>
 	</footer>
 
 </body>
